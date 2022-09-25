@@ -19,7 +19,7 @@ function changeModeDark() {
     localStorage.setItem("mode", "dark")
 } 
 
-function chnageModeLight() {
+function changeModeLight() {
     toggle.innerHTML = moon
     body.classList.remove("mode-dark")
     body.classList.add("mode-light")
@@ -28,5 +28,5 @@ function chnageModeLight() {
 
 function changeMode() {
     if (body.classList.contains("mode-light")) return changeModeDark()
-    chnageModeLight()
+    changeModeLight()
 }
