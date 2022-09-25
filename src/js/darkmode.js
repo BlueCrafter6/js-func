@@ -27,15 +27,6 @@ function chnageModeLight() {
 }
 
 function changeMode() {
-    if (body.classList.contains("mode-light")) {
-        toggle.innerHTML = sun
-        body.classList.remove("mode-light")
-        body.classList.add("mode-dark")
-        localStorage.setItem("mode", "dark")
-        return
-    }
-    toggle.innerHTML = moon
-       body.classList.remove("mode-dark")
-       body.classList.add("mode-light")
-       localStorage.setItem("mode", "light")
+    if (body.classList.contains("mode-light")) return changeModeDark()
+    chnageModeLight()
 }
