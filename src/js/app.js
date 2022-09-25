@@ -1,5 +1,3 @@
-const st = getID("scripttag")
-const out = getID("out")
 function setClipboard(text) {
     const type = "text/plain";
     const blob = new Blob([text], { type });
@@ -7,7 +5,3 @@ function setClipboard(text) {
 
     navigator.clipboard.write(data)
 }
-
-st.addEventListener("mouseenter", () => {
- out.innerHTML = "No link"
-})

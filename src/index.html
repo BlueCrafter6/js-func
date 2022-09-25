@@ -7,23 +7,25 @@
     <title>Home | js-functions</title>
     <link rel="stylesheet" href="css/home.css" />
     <link rel="icon" href="img/jsf-logo-icon.ico" type="image/x-icon" />
-    <script src="js/app.js" defer></script>
+    <script src="js/menu.js" defer></script>
     <script src="package/v1.0/jsf.js"></script>
     <script src="js/fa.js"></script>
+    <script src="js/darkmode.js" defer></script>
   </head>
-  <body>
+  <body class="mode-light">
     <nav>
       <ul class="nav-ul">
         <li class="nav-li"><a class="nav-a current">Home</a></li>
-        <li class="nav-li"><a class="nav-a">Changelog</a></li>
-        <li class="nav-li"><a class="nav-a">Products</a></li>
-        <li class="nav-li"><a class="nav-a">Support</a></li>
-        <li class="nav-li"><a class="nav-a">Admin</a></li>
-      <li class="nav-li"><a class="nav-a right" href="https://github.com/BlueCrafter6/js-func" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-      </ul>
+        <li class="nav-li"><a class="nav-a" href="changelog.html">Changelog</a></li>
+        <li class="nav-li"><a class="nav-a" href="about.html">About</a></li>
+        <li class="nav-li"><a class="nav-a" href="support.html">Support</a></li>
+        <li class="nav-li"><a class="nav-a" href="docs.html">Docs</a></li>
+        <li class="nav-li"><a class="nav-a" id="toggle"><i class="fa-solid fa-moon"></i></a></li>
+        <li class="nav-li right"><a class="nav-a" href="https://github.com/BlueCrafter6/js-func" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+    </ul>
     </nav>
     <main>
-      <div class="centre line-short">
+      <div class="centre line-short fade-in">
         <img src="img/jsf-logo-display.png" alt="logo" class="logo" />
         <h1>js-functions</h1>
         <p>Used for shorting function names</p>
@@ -32,6 +34,7 @@
       <div class="code">document.getElementByID() => getID()</div>
       <br />
       <h2>Package types</h2>
+      <div class="message">* The links are in progress</div>
       <div class="packages">
         <div class="package" id="scripttag" tabindex="1">
           <div class="centre">

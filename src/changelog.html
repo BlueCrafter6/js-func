@@ -7,11 +7,36 @@
         <title>Changelog | js-functions</title>
         <link rel="stylesheet" href="css/changelog.css" />
         <link rel="icon" href="img/jsf-logo-icon.ico" type="image/x-icon" />
-        <script src="js/app.js" defer></script>
+        <script src="js/search.js" defer></script>
         <script src="package/v1.0/jsf.js"></script>
         <script src="js/fa.js"></script>
+        <script src="js/darkmode.js" defer></script>
       </head>
-<body>
-    
+<body class="mode-light">
+    <nav>
+        <ul class="nav-ul" id="nul">
+          <li class="nav-li"><a class="nav-a" href="index.html">Home</a></li>
+          <li class="nav-li"><a class="nav-a current">Changelog</a></li>
+          <li class="nav-li"><a class="nav-a" href="about.html">About</a></li>
+          <li class="nav-li"><a class="nav-a" href="support.html">Support</a></li>
+          <li class="nav-li"><a class="nav-a" href="docs.html">Docs</a></li>
+          <li class="nav-li"><a class="nav-a" id="toggle"><i class="fa-solid fa-moon"></i></a></li>
+          <li class="nav-li"><a class="nav-a right" href="https://github.com/BlueCrafter6/js-func" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="search-div centre">
+           <input type="text" id="searchInput" placeholder="Search">
+            <span id="mglasswrap"><i class="fa-solid fa-magnifying-glass" id="mglass"></i></span>
+          </div>
+        <h1>Changelog</h1>
+        <div class="flex-ul-wrapper" id="fuw">
+        <ul class="version-changelog" id="v0.5BETA">
+            <h3 class="heading">v0.5 BETA</h3>
+            <li>First BETA release</li>
+            <li>Includes <span class="num">4</span> functions</li>
+        </ul>
+        </div>
+      </main>
 </body>
 </html>
