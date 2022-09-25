@@ -15,7 +15,7 @@
   <body class="mode-light">
     <nav>
       <ul class="nav-ul">
-        <li class="nav-li"><a class="nav-a">Home</a></li>
+        <li class="nav-li"><a class="nav-a current">Home</a></li>
         <li class="nav-li"><a class="nav-a" href="changelog.html">Changelog</a></li>
         <li class="nav-li"><a class="nav-a" href="about.html">About</a></li>
         <li class="nav-li"><a class="nav-a" href="support.html">Support</a></li>
@@ -34,7 +34,6 @@
       <div class="code">document.getElementByID() => getID()</div>
       <br />
       <h2>Package types</h2>
-      <div class="message">* The links are in progress</div>
       <div class="packages">
         <div class="package" id="scripttag" tabindex="1">
           <div class="centre">
@@ -44,7 +43,7 @@
             <h3>Script tag</h3>
           </div>
         </div>
-        <div class="package disabled" tabindex="2">
+        <div class="package" id="npm" tabindex="2">
           <div class="centre">
             <img src="img/npm.png" />
             <h3>npm package</h3>
@@ -52,7 +51,7 @@
         </div>
       </div>
       <br />
-      <span class="output"><span id="out"></span></span>
+      <span class="output">> <span id="out"></span></span>
     </main>
   </body>
 </html>
