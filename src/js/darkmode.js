@@ -9,7 +9,7 @@ let storedValue = localStorage.getItem("mode")
 if (storedValue == "dark") {
     changeModeDark()
 } else if (storedValue == "light") {
-    chnageModeLight()
+    changeModeLight()
 }
 
 function changeModeDark() {
