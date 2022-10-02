@@ -93,6 +93,7 @@ main {
     padding: 16px 40px;
     margin: 0 5px 0 5px;
     box-shadow: #eeeeee 10px 10px 10px;
+    width: fit-content;
 }
 
 .mode-dark .version-changelog {
@@ -104,6 +105,13 @@ main {
     display: flex;
     flex-direction: row-reverse;
     float: left;
+}
+
+.date {
+    padding: 5px;
+    margin: 5px;
+    font-size: 12px;
+    float: right;
 }
 
 .search-div input {
