@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation | js-functions</title>
+    <link rel="stylesheet" href="../css/docs.css" />
+    <link rel="icon" href="../img/jsf-logo-icon.ico" type="image/x-icon" />
+    <script src="../package/v0.5BETA/jsf.js"></script>
+    <script src="../js/fa.js"></script>
+    <script src="../js/darkmode.js" defer></script>
+    <script src="../js/docs.js" defer></script>
+    <script src="../js/versionGet.js" defer></script>
+  </head>
+  <body class="mode-light">
+    <nav>
+      <ul class="nav-ul">
+        <li class="nav-li"><a class="nav-a" href="../index.html">Home</a></li>
+        <li class="nav-li">
+          <a class="nav-a" href="../changelog.html">Changelog</a>
+        </li>
+        <li class="nav-li"><a class="nav-a" href="../about.html">About</a></li>
+        <li class="nav-li">
+          <a class="nav-a" href="../support.html">Support</a>
+        </li>
+        <li class="nav-li"><a class="nav-a current">Docs</a></li>
+        <li class="nav-li">
+          <a class="nav-a" id="toggle"><i class="fa-solid fa-moon"></i></a>
+        </li>
+        <li class="nav-li right">
+          <a
+            class="nav-a"
+            href="https://github.com/BlueCrafter6/js-func"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <nav>
+        <ul class="navigation">
+          <h1>Navigation</h1>
+          <li>
+            <span><a href="../docs.html">Introduction</a></span>
+          </li>
+          <li>
+            <span><a href="installation.html">Installation</a></span>
+            <ul class="inner-ul" style="--pl: 1">
+              <li><a href="installation.html#versions">Versions</a></li>
+              <li>
+                <a href="installation.html#script-tag">Installing using a script tag</a>
+              </li>
+            </ul>
+          </li>
+          <li class="active">
+            <span class="active"
+              ><a href="#">Using js-functions</a></span
+            >
+            <ul class="inner-ul" style="--pl: 1">
+              <li class="conversions">
+                <a href="#conversions"
+                  >Conversion Chart</a
+                >
+              </li>
+              <li class="funcparams">
+                <a href="#funcparams"
+                  >Function Parameters</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <h1>Using js-functions</h1>
+      <p>js-functions was designed to be simple and easy to use</p>
+      <section id="conversions" class="inner-sect" style="--pl: 1">
+        <h2>Conversion Chart</h2>
+        <p>This should help you convert your long element selector code to some short and clean element selector code (using js-func)</p>
+        <table>
+            <tr>
+              <th>Original</th>
+              <th>js-functions</th>
+            </tr>
+            <tr>
+              <td>document.getElementById()</td>
+              <td>getID()</td>
+            </tr>
+            <tr>
+              <td>document.getElementsByName()</td>
+              <td>getName()</td>
+            </tr>
+            <tr>
+              <td>document.getElementsByTagName()</td>
+              <td>getTagName()</td>
+            </tr>
+            <tr>
+              <td>document.getElementsByClassName()</td>
+              <td>getClass()</td>
+            </tr>
+          </table>
+          <p>* More will be added soon</p>
+      </section>
+      <section id="funcparams" class="inner-sect" style="--pl: 1">
+        <h2>Function Parameters</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>getID(<span class="param">id<span class="type">: string</span></span>)</h3>
+                <p><b>Returns:</b> the element with the given id</p>
+            </div>
+            <div class="card">
+                <h3>getName(<span class="param">name<span class="type">: string</span></span>)</h3>
+                <p><b>Returns:</b> the element(s) with the given name</p>
+            </div>
+            <div class="card">
+                <h3>getTagName(<span class="param">tag<span class="type">: string</span></span>)</h3>
+                <p><b>Returns:</b> the element(s) with the given tag name</p>
+            </div>
+            <div class="card">
+                <h3>getClass(<span class="param">id<span class="type">: string</span></span>)</h3>
+                <p><b>Returns:</b> the element(s) with the given class</p>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer class="centre">
+      <span class="left" title="Previous Page: Installation"
+        ><a href="installation.html"><i class="fa-solid fa-chevron-left"></i></a
+      ></span>
+      <span>Last Edited: 02/10/22</span>
+      <span class="right" title="Next Page: None"
+        ><a><i class="fa-solid fa-chevron-right"></i></a
+      ></span>
+    </footer>
+  </body>
+</html>

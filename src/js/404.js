@@ -6,33 +6,35 @@ let textPara = getID("textPara")
 let page = getID("page")
 
 async function changeHeader() {
-textHeader.innerHTML = "4|"
+    textHeader.innerHTML = "&nbsp;"
 await sleep(150)
-textHeader.innerHTML = "40|"
+textHeader.innerHTML = "4"
 await sleep(150)
-textHeader.innerHTML = "404|"
+textHeader.innerHTML = "40"
 await sleep(150)
-textHeader.innerHTML = "404 |"
+textHeader.innerHTML = "404"
 await sleep(150)
-textHeader.innerHTML = "404 N|"
+textHeader.innerHTML = "404 "
 await sleep(150)
-textHeader.innerHTML = "404 No|"
+textHeader.innerHTML = "404 N"
 await sleep(150)
-textHeader.innerHTML = "404 Not|"
+textHeader.innerHTML = "404 No"
 await sleep(150)
-textHeader.innerHTML = "404 Not |"
+textHeader.innerHTML = "404 Not"
 await sleep(150)
-textHeader.innerHTML = "404 Not F|"
+textHeader.innerHTML = "404 Not "
 await sleep(150)
-textHeader.innerHTML = "404 Not Fo|"
+textHeader.innerHTML = "404 Not F"
 await sleep(150)
-textHeader.innerHTML = "404 Not Fou|"
+textHeader.innerHTML = "404 Not Fo"
 await sleep(150)
-textHeader.innerHTML = "404 Not Foun|"
+textHeader.innerHTML = "404 Not Fou"
 await sleep(150)
-textHeader.innerHTML = "404 Not Found|"
+textHeader.innerHTML = "404 Not Foun"
 await sleep(150)
-textHeader.innerHTML = "404 Not Found&nbsp;"
+textHeader.innerHTML = "404 Not Found"
+await sleep(150)
+textHeader.innerHTML = "404 Not Found"
 await sleep(150)
 }
 

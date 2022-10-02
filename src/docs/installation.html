@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Documentation | js-functions</title>
-    <link rel="stylesheet" href="css/docs.global.css" />
+    <link rel="stylesheet" href="../css/docs.css" />
     <link rel="icon" href="../img/jsf-logo-icon.ico" type="image/x-icon" />
     <script src="../package/v0.5BETA/jsf.js"></script>
     <script src="../js/fa.js"></script>
     <script src="../js/darkmode.js" defer></script>
     <script src="../js/docs.js" defer></script>
+    <script src="../js/versionGet.js" defer></script>
   </head>
   <body class="mode-light">
     <nav>
@@ -20,7 +21,9 @@
           <a class="nav-a" href="../changelog.html">Changelog</a>
         </li>
         <li class="nav-li"><a class="nav-a" href="../about.html">About</a></li>
-        <li class="nav-li"><a class="nav-a" href="../support.html">Support</a></li>
+        <li class="nav-li">
+          <a class="nav-a" href="../support.html">Support</a>
+        </li>
         <li class="nav-li"><a class="nav-a current">Docs</a></li>
         <li class="nav-li">
           <a class="nav-a" id="toggle"><i class="fa-solid fa-moon"></i></a>
@@ -36,40 +39,86 @@
       </ul>
     </nav>
     <main>
-      <ul class="navigation">
-        <h2>Navigation</h2>
-        <li><a href="../docs.html">Introduction</a></li>
-        <li class="active">
-          <a href="#">Installation</a>
-          <ul class="inner" style="--i: 1">
-            <li><a href="#scripttag">Script Tag</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="using-js-functions.html">Using js-functions</a>
-        <ul class="inner" style="--i:1">
-        <li><a href="using-js-functions.html#shortened-func-names">Shortened functions names</a></li>
+      <nav>
+        <ul class="navigation">
+          <h1>Navigation</h1>
+          <li>
+            <span><a href="../docs.html">Introduction</a></span>
+          </li>
+          <li class="active">
+            <span class="active"><a href="#">Installation</a></span>
+            <ul class="inner-ul" style="--pl: 1">
+              <li class="versions-s"><a href="#versions">Versions</a></li>
+              <li class="script-tag-s">
+                <a href="#script-tag">Installing using a script tag</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span
+              ><a href="using-js-functions.html">Using js-functions</a></span
+            >
+            <ul class="inner-ul" style="--pl: 1">
+              <li>
+                <a href="using-js-functions.html#conversions"
+                  >Conversion Chart</a
+                >
+              </li>
+              <li>
+                <a href="using-js-functions.html#funcparams"
+                  >Function Parameters</a
+                >
+              </li>
+            </ul>
+          </li>
         </ul>
-        </li>
-      </ul>
+      </nav>
+      <h1>Installations</h1>
+      <section id="versions" class="inner-sect" style="--pl: 1">
+        <h2>Versions</h2>
+        <h6><i class="fa-solid fa-star"></i> = Latest</h6>
+        <ul id="vers" class="v">
+          <span class="loader"
+            ><i class="fa-solid fa-spinner" id="spinner"></i
+          ></span>
+        </ul>
+      </section>
+      <section id="script-tag" class="inner-sect" style="--pl: 1">
+        <h2>Installing using a script tag</h2>
+        <p>
+          To get started, select the version you want to install from the
+          dropdown menu
+        </p>
+        <label for="ver">Select Version:</label>
+        <select name="version" id="ver">
+          <option>v0.5BETA</option>
+        </select>
 
-      <div class="container docs">
-        <h1 id="installation"><a href="#installation">#</a> Installation</h1>
-        <div class="inner" style="--i:1">
-          <h2 class="inner" id="scripttag"><a href="#scripttag">#</a> Script Tag</h2>
-<p>
-  A common way of importing packages (or whatever else) in websites</p>
-  <div class="code" style="--i:1">
-<<span class="token red">script</span> <span class="token orange">src</span>=<span class="lime token">'https://jsfunc.web.app/package/v*/jsf.js'</span> <span class="token orange">defer</span>>
-</div>
-<p>"defer" is used to load the script after the body to prevent issues</p> 
+        <div class="code" id="scripttaglink">
+          <<span class="red">script</span> <span class="orange">src</span>=<span
+            class="lime"
+            >"https://js-func.web.app/package/<span id="versionplace">v--</span
+            >/jsf.js"</span
+          >
+          <span class="orange">defer</span>>
         </div>
-      </div>
+        <button id="clipboard">
+          <i class="fa-solid fa-clipboard"></i> Copy to Clipboard
+        </button>
+        <p>* defer is used to load the script after the body loads<br />
+        Copy and paste the script tag in the head of your document and you should be good to go!
+        </p>
+      </section>
     </main>
     <footer class="centre">
-<span class="left option">&nbsp;<i class="fa-solid fa-chevron-left"></i> Introduction</span>
-Latest Edit: 01/10/2022
-<span class="right option">Using js-functions <i class="fa-solid fa-chevron-right"></i>&nbsp;</span>
+      <span class="left" title="Previous Page: Introduction"
+        ><a href="../docs.html"><i class="fa-solid fa-chevron-left"></i></a
+      ></span>
+      <span>Last Edited: 02/10/22</span>
+      <span class="right" title="Next Page: Using js-functions"
+        ><a href="using-js-functions.html"
+          ><i class="fa-solid fa-chevron-right"></i></a
+      ></span>
     </footer>
   </body>
 </html>
