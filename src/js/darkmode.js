@@ -30,3 +30,5 @@ function changeMode() {
     if (body.classList.contains("mode-light")) return changeModeDark()
     changeModeLight()
 }
+
+addEvListener(window, "click", () => console.log("s"))
