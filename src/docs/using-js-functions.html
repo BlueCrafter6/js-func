@@ -7,22 +7,22 @@
     <title>Documentation | js-functions</title>
     <link rel="stylesheet" href="../css/docs.css" />
     <link rel="icon" href="../img/jsf-logo-icon.ico" type="image/x-icon" />
-    <script src="../package/v0.5BETA/jsf.js"></script>
+    <script src="../package/v1.0/jsf.js"></script>
     <script src="../js/fa.js"></script>
     <script src="../js/darkmode.js" defer></script>
     <script src="../js/docs.js" defer></script>
-    <script src="../js/versionGet.js" defer></script>
+    <script src="../js/search.docs.js" defer></script>
   </head>
   <body class="mode-light">
     <nav>
       <ul class="nav-ul">
-        <li class="nav-li"><a class="nav-a" href="../index.html">Home</a></li>
+        <li class="nav-li"><a class="nav-a" href="../index">Home</a></li>
         <li class="nav-li">
-          <a class="nav-a" href="../changelog.html">Changelog</a>
+          <a class="nav-a" href="../changelog">Changelog</a>
         </li>
-        <li class="nav-li"><a class="nav-a" href="../about.html">About</a></li>
+        <li class="nav-li"><a class="nav-a" href="../about">About</a></li>
         <li class="nav-li">
-          <a class="nav-a" href="../support.html">Support</a>
+          <a class="nav-a" href="../support">Support</a>
         </li>
         <li class="nav-li"><a class="nav-a current">Docs</a></li>
         <li class="nav-li">
@@ -43,31 +43,24 @@
         <ul class="navigation">
           <h1>Navigation</h1>
           <li>
-            <span><a href="../docs.html">Introduction</a></span>
+            <span><a href="../docs">Introduction</a></span>
           </li>
           <li>
-            <span><a href="installation.html">Installation</a></span>
+            <span><a href="installation">Installation</a></span>
             <ul class="inner-ul" style="--pl: 1">
-              <li><a href="installation.html#versions">Versions</a></li>
+              <li><a href="installation#versions">Versions</a></li>
               <li>
-                <a href="installation.html#script-tag">Installing using a script tag</a>
+                <a href="installation#script-tag"
+                  >Installing using a script tag</a
+                >
               </li>
             </ul>
           </li>
           <li class="active">
-            <span class="active"
-              ><a href="#">Using js-functions</a></span
-            >
+            <span class="active"><a href="#">Using js-functions</a></span>
             <ul class="inner-ul" style="--pl: 1">
               <li class="conversions">
-                <a href="#conversions"
-                  >Conversion Chart</a
-                >
-              </li>
-              <li class="funcparams">
-                <a href="#funcparams"
-                  >Function Parameters</a
-                >
+                <a href="#conversions">Conversion Chart</a>
               </li>
             </ul>
           </li>
@@ -77,67 +70,68 @@
       <p>js-functions was designed to be simple and easy to use</p>
       <section id="conversions" class="inner-sect" style="--pl: 1">
         <h2>Conversion Chart</h2>
-        <p>This should help you convert your long element selector code to some short and clean element selector code (using js-func)</p>
-        <table>
-            <tr>
-              <th>Original</th>
-              <th>js-functions</th>
-            </tr>
-            <tr>
-              <td>document.getElementById()</td>
-              <td>getID()</td>
-            </tr>
-            <tr>
-              <td>document.getElementsByName()</td>
-              <td>getName()</td>
-            </tr>
-            <tr>
-              <td>document.getElementsByTagName()</td>
-              <td>getTagName()</td>
-            </tr>
-            <tr>
-              <td>document.getElementsByClassName()</td>
-              <td>getClass()</td>
-            </tr>
-          </table>
-          <p>* More will be added soon</p>
-      </section>
-      <section id="funcparams" class="inner-sect" style="--pl: 1">
-        <h2>Function Parameters</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>getID(<span class="param">id<span class="type">: string</span></span>)</h3>
-                <p>
-                  Grabs the element with the given id<br><br>
-                  <b>Returns:</b> HTMLElement
-                </p>
-            </div>
-            <div class="card">
-                <h3>getName(<span class="param">name<span class="type">: string</span></span>)</h3>
-                <p>
-                  Grabs the element(s) with the given name<br><br>
-                  <b>Returns:</b> Array[ ]
-                </p>
-            </div>
-            <div class="card">
-                <h3>getTagName(<span class="param">tag<span class="type">: string</span></span>)</h3>
-                <p>
-                  Grabs the element(s) with the given tag name<br><br>
-                  <b>Returns:</b> Array[ ]
-                </p>
-            </div>
-            <div class="card">
-                <h3>getClass(<span class="param">_class<span class="type">: string</span></span>)</h3>
-                <p>
-                  Grabs the element(s) with the given class name<br><br>
-                  <b>Returns:</b> Array[ ]</p>
-            </div>
-        </div>
+        <p>
+          This should help you convert your long element selector code to some
+          short and clean element selector code (using js-func)
+        </p>
+        <input type="text" id="searchTable" placeholder="Search">
+        <table id="tab">
+            <th>Original</th>
+            <th>js-functions</th>
+          <tr>
+            <td>.getElementById()</td>
+            <td>getID()</td>
+          </tr>
+          <tr>
+            <td>.getElementsByName()</td>
+            <td>getName()</td>
+          </tr>
+          <tr>
+            <td>.getElementsByTagName()</td>
+            <td>getTagName()</td>
+          </tr>
+          <tr>
+            <td>.getElementsByClassName()</td>
+            <td>getClass()</td>
+          </tr>
+          <tr>
+            <td>.querySelector()</td>
+            <td>$</td>
+          </tr>
+          <tr>
+            <td>.addEventListener()</td>
+            <td>addEvListener()</td>
+          </tr>
+          <tr>
+            <td>.append()</td>
+            <td>apnd()</td>
+          </tr>
+          <tr>
+            <td>.cloneNode()</td>
+            <td>clone()</td>
+          </tr>
+          <tr>
+            <td>.createAttribute()</td>
+            <td>createAttr()</td>
+          </tr>
+          <tr>
+            <td>.createAttributeNS</td>
+            <td>createattrNS()</td>
+          </tr>
+          <tr>
+            <td>.createDocumentFragment</td>
+            <td>createDocFrag()</td>
+          </tr>
+          <tr>
+            <td>.createElement()</td>
+            <td>createElem()</td>
+          </tr>
+        </table>
       </section>
     </main>
     <footer class="centre">
       <span class="left" title="Previous Page: Installation"
-        ><a href="installation.html"><i class="fa-solid fa-chevron-left"></i></a
+        ><a href="installation"><i class="fa-solid fa-chevron-left"></i></a
       ></span>
       <span>Last Edited: 02/10/22</span>
       <span class="right" title="Next Page: None"
