@@ -250,6 +250,18 @@ button:hover {
   cursor: pointer;
 }
 
+input {
+  border: none;
+  background: #eeeeee;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.mode-dark input {
+  background: #2e2e2e;
+  color: #ffffff;
+}
+
 .loader svg {
 animation: spin 1s infinite linear;
 font-size: 1em;
@@ -312,6 +324,10 @@ padding: 5px;
 border-radius: 20px;
 margin-right: 20px;
 margin-bottom: 20px;
+}
+
+.card p {
+  line-height: 30px;
 }
 
 .mode-dark .card {
