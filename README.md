@@ -11,3 +11,4 @@ The official js-functions Github repository
 [🌏 Website](https://jsfunc.web.app) (includes docs)  
 [🗣️ Support](mailto:jsfunccontact@gmail.com)
 
+You are welcome to make corrections to this repo
