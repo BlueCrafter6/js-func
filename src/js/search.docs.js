@@ -4,8 +4,8 @@ let searchTable = getID("searchTable");
 for (tr of tableData) {
   arr.push(tr);
 }
+
 arr.splice(0, 1);
-console.log(arr);
 
 function search(input, array) {
   for (data of array) {
