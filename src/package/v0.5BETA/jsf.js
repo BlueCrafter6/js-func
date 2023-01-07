@@ -1,6 +1,13 @@
 const doc = document;
 const logE = (err) => console.error(`JSFError: ${err}`);
 
+console.log(
+`%c[js-functions]`,
+`font-weight:700`,
+`You are using an outdated version of js-functions (v0.5BETA). Please check the repository for the latest version:
+https://github.com/BlueCrafter6/js-func`
+);
+
 /**
  * Gets an element using an id
  * @param {string} id The id of the element you want to grab
