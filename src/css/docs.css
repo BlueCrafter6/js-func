@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 html {
   scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 45px;
 }
 
 body {
@@ -66,7 +72,7 @@ background: #ebdc0b;
 
 /************************************************/
 
-.centre {
+.centre, [center] {
   text-align: -webkit-center;
 }
 
@@ -116,16 +122,30 @@ background: #ebdc0b;
 }
 
 main {
-  margin-left: 20rem;
+  margin-left: 21rem;
   margin-bottom: 3rem;
 }
 
 .code {
   background: #dddddd;
-  width: fit-content;
+  width: 740px;
+  font-size: 18px;
   padding: 5px;
-  border-radius: 20px;
-  font-family: "Fira Code", system-ui;
+  border-radius: 10px;
+  font-family: "Fira Code";
+}
+
+@media (width <= 1100px) {
+  .code {
+    width: 450px;
+  }
+}
+
+@media (width <= 810px) {
+    .code {
+      width: 200px;
+      word-wrap: break-word;
+    }
 }
 
 .mode-dark .code {
@@ -143,15 +163,18 @@ p a:hover {
 /************************************************/
 
 .navigation {
+  font-size: 14px;
   background: #eeeeee;
-  width: 250px;
+  width: 300px;
   position: fixed;
   left: 0;
   top: 25px;
   height: 100%;
-  border-top-right-radius: 50px;
   list-style-type: none;
   user-select: none;
+  padding-left: 20px;
+  padding-top: 5px;
+  margin-right: 10px;
 }
 
 .navigation a {
@@ -189,6 +212,7 @@ p a:hover {
   border-left: 3px solid #1fa8f7;
   color: #1fa8f7;
   font-weight: 700;
+  padding-left: 5px;
 }
 
 .inner-p {
@@ -206,14 +230,20 @@ p a:hover {
 
 .inner-ul li {
   margin-bottom: 0;
+  padding: 0;
 }
 
 select, option {
   border: none;
   background: #dddddd;
   padding: 3px;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: ease 200ms;
+}
+
+.mode-dark select, .mode-dark option {
+  color-scheme: dark;
+  background: #2e2e2e;
 }
 
 ::-webkit-scrollbar {
@@ -223,7 +253,7 @@ select, option {
 
 ::-webkit-scrollbar-thumb {
   background-color: #d8cc23;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 2px solid #fff237;
   height: 10%;
 }
@@ -235,7 +265,7 @@ select, option {
 button {
   border: none;
   padding: 5px;
-  border-radius: 20px;
+  border-radius: 10px;
   background: #eeeeee;
 }
 
@@ -253,7 +283,7 @@ button:hover {
 input {
   border: none;
   background: #eeeeee;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 5px;
 }
 
@@ -311,8 +341,20 @@ td, th {
 
 table {
   width: fit-content;
-  border-radius: 10px;
+  border-radius: 0px;
   padding: 5px;
+}
+
+.search-div svg {
+margin-left: -25px;
+cursor: pointer;
+background: #eeeeee;
+opacity: .8;
+}
+
+.mode-dark .search-div svg {
+  background: #2e2e2e;
+  color: #ffffff;
 }
 
 
@@ -321,7 +363,7 @@ table {
 .card {
 background: #eeeeee;
 padding: 5px;
-border-radius: 20px;
+border-radius: 10px;
 margin-right: 20px;
 margin-bottom: 20px;
 }
@@ -344,51 +386,30 @@ margin-bottom: 20px;
 
 /************************************************/
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
- background-color: #eeeeee;
- padding-bottom: 10px;
- user-select: none;
- font-size: 18px;
-}
-
-footer svg {
-  cursor: pointer;
-}
-
-.mode-dark footer {
-  background: #2e2e2e;
-}
-
-footer .right {
-  margin-right: 6px;
-}
-
-footer .left {
-  margin-left: 6px;
-  float: left;
-}
-
-footer a {
-  color: inherit;
-}
-
-/************************************************/
-
-.red {
+.element {
   color: #ff0000;
 }
 
-.lime {
-color: #00ca00
+.js-func {
+  color: #1fa8f7;
+}
+
+.js-arrow {
+  color: #ff00f2;
+}
+
+.string {
+  color: #00BE0A;
 }
 
 .comment {
   color: #3d3d3d;
 }
 
-.orange {
-  color: #ff7c02;
+.attribute {
+  color: #ff7300;
+}
+
+.mode-dark .attribute {
+  color: #ffa00f;
 }

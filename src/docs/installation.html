@@ -41,7 +41,6 @@
     <main>
       <nav>
         <ul class="navigation">
-          <h1>Navigation</h1>
           <li>
             <span><a href="../docs">Introduction</a></span>
           </li>
@@ -61,22 +60,20 @@
             <ul class="inner-ul" style="--pl: 1">
               <li>
                 <a href="using-js-functions#conversions"
-                  >Conversion Chart</a
+                  >Conversion Table</a
                 >
+              </li>
+              <li class="how-to-use">
+                <a href="#how-to-use">How to use</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
-      <h1>Installations</h1>
+      <h1>Installation</h1>
       <section id="versions" class="inner-sect" style="--pl: 1">
         <h2>Versions</h2>
-        <h6><i class="fa-solid fa-star"></i> = Latest</h6>
-        <ul id="vers" class="v">
-          <span class="loader"
-            ><i class="fa-solid fa-spinner" id="spinner"></i
-          ></span>
-        </ul>
+        <ul id="vers" class="v"><!--[]--></ul>
       </section>
       <section id="script-tag" class="inner-sect" style="--pl: 1">
         <h2>Installing using a script tag</h2>
@@ -84,19 +81,24 @@
           To get started, select the version you want to install from the
           dropdown menu
         </p>
+        <!--NOTE: Versions
+        Top: Latest
+        Bottom: Earliest
+        -->
         <label for="ver">Select Version:</label>
         <select name="version" id="ver">
+          <option>v1.1</option>
           <option>v1.0</option>
           <option>v0.5BETA</option>
         </select>
 
         <div class="code" id="scripttaglink">
-          <<span class="red">script</span> <span class="orange">src</span>=<span
-            class="lime"
-            >"https://js-func.web.app/package/<span id="versionplace">v--</span
+          <<span class="element">script</span> <span class="attribute">src</span>=<span
+            class="string"
+            >"https://jsfunc.web.app/package/<span id="versionplace">v</span
             >/jsf.js"</span
           >
-          <span class="orange">defer</span>>
+          <span class="attribute">defer</span>>
         </div>
         <button id="clipboard">
           <i class="fa-solid fa-clipboard"></i> Copy to Clipboard
@@ -106,15 +108,5 @@
         </p>
       </section>
     </main>
-    <footer class="centre">
-      <span class="left" title="Previous Page: Introduction"
-        ><a href="../docs"><i class="fa-solid fa-chevron-left"></i></a
-      ></span>
-      <span>Last Edited: 02/10/22</span>
-      <span class="right" title="Next Page: Using js-functions"
-        ><a href="using-js-functions"
-          ><i class="fa-solid fa-chevron-right"></i></a
-      ></span>
-    </footer>
   </body>
 </html>
