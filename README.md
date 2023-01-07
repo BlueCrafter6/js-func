@@ -3,6 +3,8 @@
 # js-func
 The official js-functions Github repository
 
+### Latest version: v1.1
+
 ## What can js-functions do?
 📏 Shorten function names  
 🚀 Boost speed and efficiency
