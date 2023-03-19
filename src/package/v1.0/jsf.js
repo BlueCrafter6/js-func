@@ -2,11 +2,9 @@ const doc = document;
 const logE = (err) => console.error(`JSFError: ${err}`);
 
 console.log(
-  `%c[js-functions]`,
-  `font-weight:700`,
-  `You are using an outdated version of js-functions (v1.0). Please check the repository for the latest version:
-  https://github.com/BlueCrafter6/js-func`
-  );
+  `[js-functions] This version (v0.5BETA) is now outdated.
+  Please check https://github.com/BlueCrafter6/js-func for the latest version`
+)
 
 /**
  * Gets an element using an id
