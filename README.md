@@ -1,4 +1,4 @@
-![JSF Logo](/src/img/jsf-logo-icon.ico "JSF Logo")
+![JSF Logo](/src/img/jsf-logo.png "JSF Logo")
 
 # js-func
 The official js-functions Github repository
